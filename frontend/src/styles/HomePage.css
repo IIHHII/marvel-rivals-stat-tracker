@@ -1,0 +1,152 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background-image: url('../../public/assets/images/background.jpg');
+    background-size: cover;
+    background-position: center center;
+    padding: 20px;
+    position: relative;
+    color: rgb(255, 255, 255);
+}
+
+.top-left-section {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.top-left-logo {
+    width: 50px;
+}
+
+.top-right-buttons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.top-right-buttons button {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.top-right-buttons button:hover {
+    background-color: #747474;
+}
+
+@media (max-width: 950px) {
+    .top-right-buttons button:nth-child(5),
+    .top-right-buttons button:nth-child(6) {
+        display: none;
+    }
+}
+
+@media (max-width: 750px) {
+    .top-right-buttons button:nth-child(4),
+    .top-right-buttons button:nth-child(5),
+    .top-right-buttons button:nth-child(6) {
+        display: none;
+    }
+}
+
+@media (max-width: 550px) {
+    .top-right-buttons button:nth-child(3),
+    .top-right-buttons button:nth-child(4),
+    .top-right-buttons button:nth-child(5),
+    .top-right-buttons button:nth-child(6) {
+        display: none;
+    }
+}
+
+@media (max-width: 350px) {
+    .top-right-buttons button:nth-child(2),
+    .top-right-buttons button:nth-child(3),
+    .top-right-buttons button:nth-child(4),
+    .top-right-buttons button:nth-child(5),
+    .top-right-buttons button:nth-child(6) {
+        display: none;
+    }
+}
+
+@media (max-width: 150px) {
+    .top-right-buttons button:nth-child(1),
+    .top-right-buttons button:nth-child(2),
+    .top-right-buttons button:nth-child(3),
+    .top-right-buttons button:nth-child(4),
+    .top-right-buttons button:nth-child(5),
+    .top-right-buttons button:nth-child(6) {
+        display: none;
+    }
+}
+
+.login-signin {
+    display: inline-block !important; 
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.home-container h1 {
+    font-size: 3rem; 
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-container h1 img {
+    width: 60px;
+    margin-right: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    padding: 10px;
+    font-size: 1.2rem;
+    width: 300px;
+    margin-bottom: 20px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
